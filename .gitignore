@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Build
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+
+# Firebase secrets
+*-firebase-adminsdk*.json
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+local.properties
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Build files
+build/
+dist/
+
+# Logs
+*.log
+
+# Media large files
+*.mp3
+# Android
+.idea/
+*.iml
+local.properties
+
+# Media
+*.mp3
+*.mp4

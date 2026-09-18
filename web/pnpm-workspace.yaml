@@ -1,0 +1,6 @@
+allowBuilds:
+  '@firebase/util': true
+  core-js: true
+  es5-ext: true
+  protobufjs: true
+  unrs-resolver: true

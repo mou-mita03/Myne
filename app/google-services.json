@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91873956124",
+    "project_id": "boipori-5faec",
+    "storage_bucket": "boipori-5faec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91873956124:android:0e414ef1b1c5c20cb42ad9",
+        "android_client_info": {
+          "package_name": "com.starry.myne"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtdniSkMDAPvXmRvnD4dkEuR7W45ccrms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

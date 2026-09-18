@@ -1,0 +1,3 @@
+import { NextRequest, NextResponse } from "next/server";
+const BASE = "https://myne.abyx.in/books";
+export async function GET(request: NextRequest) { const source = new URL(BASE); const input = request.nextUrl.searchParams; for (const key of ["page", "search", "ids", "topic", "languages"]) { const value = input.get(key); if (value) source.searchParams.set(key, value); } try { const response = await fetch(source, { next: { revalidate: 300 } }); if (!response.ok) return NextResponse.json({ error: "Book source is temporarily unavailable." }, { status: 502 }); return NextResponse.json(await response.json(), { headers: { "Cache-Control": "public, max-age=300" } }); } catch { return NextResponse.json({ error: "Book source could not be reached." }, { status: 502 }); } }

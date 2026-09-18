@@ -1,0 +1,11 @@
+{
+  "name": "Myne Online Book Library",
+  "short_name": "Myne",
+  "description": "Browse public-domain books, save EPUBs locally, and read in the browser.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f8f6",
+  "theme_color": "#2f6d62",
+  "icons": []
+}

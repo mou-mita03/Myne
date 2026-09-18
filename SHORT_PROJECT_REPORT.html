@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Project Report</title>
+</head>
+<body>
+  <h1>1. Cover Page</h1>
+  <ul>
+    <li>Project Title: [Project Title]</li>
+    <li>Team Members: [Team Member Name]</li>
+    <li>Date: [Date]</li>
+    <li>Lab / Instructor: [Instructor Name]</li>
+  </ul>
+
+  <h1>2. Table of Contents</h1>
+  <ol>
+    <li>Abstract - [Page No.]</li>
+    <li>Introduction - [Page No.]</li>
+    <li>Literature Review / Related Work - [Page No.]</li>
+    <li>Methodology - [Page No.]</li>
+    <li>System Design and Architecture - [Page No.]</li>
+    <li>Implementation - [Page No.]</li>
+    <li>Results and Discussion - [Page No.]</li>
+    <li>Conclusion and Future Work - [Page No.]</li>
+    <li>Feature Status Table - [Page No.]</li>
+    <li>Technology Stack Table - [Page No.]</li>
+  </ol>
+
+  <h1>3. Abstract</h1>
+  <p>
+    This project is an Android mobile application for book reading and user-based reading management.
+    The app allows users to register, log in, browse books, read books, save favorites, and keep track
+    of their reading progress. It also includes reading streak tracking and a daily token balance system
+    for controlled access.
+  </p>
+  <p>
+    The project is developed using Kotlin, Jetpack Compose, Firebase Authentication, Firebase Firestore,
+    Room Database, and DataStore. At the current stage, the main features are working properly. However,
+    token transaction/history and some advanced features are still future work.
+  </p>
+
+  <h1>4. Introduction</h1>
+  <h2>Project Background</h2>
+  <p>
+    Reading books on mobile devices has become very common because smartphones are easy to carry and use anywhere.
+    Many users want one app where they can read books, keep their reading progress, and manage their personal reading data.
+  </p>
+
+  <h2>Problem Statement</h2>
+  <p>
+    Many reading apps provide only basic reading support. They may not combine user login, favorite books,
+    progress save, reading streak, and token-based access in one complete system. This creates a need for a
+    simple and organized mobile reading app.
+  </p>
+
+  <h2>Objectives</h2>
+  <ul>
+    <li>To build an Android mobile reading app</li>
+    <li>To add user login and registration</li>
+    <li>To support book reading and favorite books</li>
+    <li>To save user-related data</li>
+    <li>To track reading progress and streak</li>
+    <li>To manage daily token-based access</li>
+  </ul>
+
+  <h2>Scope of the Project</h2>
+  <p>
+    This project mainly focuses on Android app development for book reading. It covers login/register,
+    book browsing, reading, local storage, favorites, progress tracking, streak tracking, and Firebase-based
+    user data sync. Features like token transaction/history, admin control, and notifications are outside the
+    current completed scope.
+  </p>
+
+  <h1>5. Literature Review / Related Work</h1>
+  <p>
+    There are many ebook reader apps and digital library systems available today. These systems show that
+    mobile reading apps are useful because users can read books anytime and anywhere. A good reading app
+    should also remember user choices and reading progress.
+  </p>
+  <p>
+    Firebase is useful in this kind of project because it provides authentication and cloud database support.
+    Authentication helps keep user accounts secure. Firestore helps store cloud-based user information such as
+    token balance, favorite books, and recent progress. Local databases like Room are useful because they help
+    store data on the device for faster access. DataStore is also helpful for small settings and streak-related data.
+  </p>
+
+  <h1>6. Methodology</h1>
+  <h2>Development Approach</h2>
+  <p>
+    The project follows a step-by-step development process. First, the main reading and library features were built.
+    After that, user authentication, favorites, progress tracking, cloud sync, reading streak, and token balance
+    features were added.
+  </p>
+
+  <h2>Tools and Technologies Used</h2>
+  <ul>
+    <li>Android Studio for development</li>
+    <li>Kotlin for app logic</li>
+    <li>Jetpack Compose for UI design</li>
+    <li>Firebase Authentication for login/register</li>
+    <li>Firebase Firestore for cloud user data</li>
+    <li>Room Database for local library and progress</li>
+    <li>DataStore for settings and streak data</li>
+    <li>OkHttp for API communication</li>
+    <li>Dagger Hilt for dependency injection</li>
+  </ul>
+
+  <h2>Project Timeline and Milestones</h2>
+  <ul>
+    <li>Milestone 1: Basic app structure and UI</li>
+    <li>Milestone 2: Book browsing and reading</li>
+    <li>Milestone 3: Local storage for library and progress</li>
+    <li>Milestone 4: Login and register system</li>
+    <li>Milestone 5: Favorites and user data sync</li>
+    <li>Milestone 6: Reading streak and daily token balance</li>
+    <li>Future Milestone: Token history, admin tools, and more improvements</li>
+  </ul>
+
+  <h1>7. System Design and Architecture</h1>
+  <p>
+    The app uses a simple modern Android architecture. The user interface is made with Jetpack Compose.
+    ViewModels handle screen logic and state. Firebase Authentication manages login and registration.
+    Firebase Firestore stores important user data in the cloud. Room Database stores local library items
+    and reading progress. DataStore stores user settings and streak information.
+  </p>
+  <p>
+    The reading flow is simple. First, the user logs in. Then the user can browse or import books, open a book,
+    read it, and save progress. Favorite books can also be stored. The app keeps a daily token balance and
+    updates it when token-based access is used.
+  </p>
+
+  <pre>User
+  |
+  v
+Jetpack Compose UI
+  |
+  v
+ViewModels
+  |---- Firebase Authentication
+  |---- Firebase Firestore
+  |---- Room Database
+  |---- DataStore
+  |---- Book API / EPUB Reader</pre>
+
+  <h1>8. Implementation</h1>
+  <h2>Completed Features</h2>
+  <p>The following features are implemented in the current code:</p>
+  <ul>
+    <li>Login and register using Firebase Authentication</li>
+    <li>Logout and logged-in user email display</li>
+    <li>Book browsing and searching</li>
+    <li>Book detail view</li>
+    <li>EPUB reading inside the app</li>
+    <li>Importing EPUB books from device storage</li>
+    <li>Saving books in local library</li>
+    <li>Favorite books support</li>
+    <li>Reading progress save</li>
+    <li>Reading streak tracking</li>
+    <li>Daily token balance reset and token usage logic</li>
+  </ul>
+
+  <h2>Partially Completed Features</h2>
+  <ul>
+    <li>Cloud sync is available for selected user data such as favorites, token balance, streak values, and recent reading progress</li>
+    <li>Token-based access logic is present, but full token management is not finished</li>
+  </ul>
+
+  <h2>Planned Feature / Future Work</h2>
+  <ul>
+    <li>Token transaction/history</li>
+    <li>Better user dashboard</li>
+    <li>Better Firebase security rules</li>
+    <li>Admin panel</li>
+    <li>Offline reading improvement</li>
+    <li>Notifications</li>
+    <li>More testing and final deployment</li>
+  </ul>
+
+  <h2>Important Files and Folders</h2>
+  <ul>
+    <li><code>app/src/main/java/com/starry/myne/ui/</code> - UI screens and ViewModels</li>
+    <li><code>helpers/AuthManager.kt</code> - login/register logic</li>
+    <li><code>helpers/UserFirestoreRepository.kt</code> - cloud user sync</li>
+    <li><code>helpers/DailyTokenManager.kt</code> - daily token logic</li>
+    <li><code>helpers/ReadingStreakStore.kt</code> - streak tracking</li>
+    <li><code>database/</code> - local Room database</li>
+    <li><code>api/BookAPI.kt</code> - book API calls</li>
+  </ul>
+
+  <h1>9. Results and Discussion</h1>
+  <p>
+    The project currently works as a mobile reading app with account support and reading management features.
+    Users can log in, read books, save favorite books, store reading progress, and continue their reading later.
+    The app also tracks reading streak and daily token balance.
+  </p>
+  <p>
+    The current result matches most of the project objectives. The combination of local storage and Firebase sync
+    is a strong point of the system. However, some advanced parts are still incomplete. The biggest unfinished part
+    is token transaction/history. Some future features like admin control, notifications, and better offline support
+    are also not complete yet.
+  </p>
+
+  <h1>10. Conclusion and Future Work</h1>
+  <p>
+    This project successfully builds an Android reading app with useful user features. The app already includes
+    login/register, reading, favorites, user data sync, reading progress, streak tracking, and daily token balance.
+    This makes the current system meaningful and usable.
+  </p>
+  <p>
+    There are still some limitations. Token transaction/history is not implemented yet. Firebase security can be
+    improved more. The system also does not yet include an admin panel, complete offline reading improvements,
+    or notification support. Future development should focus on these parts along with more testing and final deployment.
+  </p>
+
+  <h1>Feature Status Table</h1>
+  <table border="1" cellspacing="0" cellpadding="6">
+    <tr>
+      <th>Feature</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>Login/Register</td>
+      <td>Completed</td>
+      <td>Firebase Authentication is used</td>
+    </tr>
+    <tr>
+      <td>User Data Sync</td>
+      <td>Partially Completed</td>
+      <td>Firestore stores selected user data</td>
+    </tr>
+    <tr>
+      <td>Book Browsing/Search</td>
+      <td>Completed</td>
+      <td>API-based book loading is present</td>
+    </tr>
+    <tr>
+      <td>Book Reading</td>
+      <td>Completed</td>
+      <td>Internal EPUB reader is available</td>
+    </tr>
+    <tr>
+      <td>Favorite Books</td>
+      <td>Completed</td>
+      <td>Stored locally and synced</td>
+    </tr>
+    <tr>
+      <td>Reading Progress</td>
+      <td>Completed</td>
+      <td>Saved in Room database</td>
+    </tr>
+    <tr>
+      <td>Reading Streak</td>
+      <td>Completed</td>
+      <td>Tracked with DataStore</td>
+    </tr>
+    <tr>
+      <td>Daily Token Balance</td>
+      <td>Completed</td>
+      <td>Reset and consume logic found</td>
+    </tr>
+    <tr>
+      <td>Token Transaction/History</td>
+      <td>Planned Feature</td>
+      <td>Not completed yet</td>
+    </tr>
+    <tr>
+      <td>Admin Panel</td>
+      <td>Future Work</td>
+      <td>Not found in current code</td>
+    </tr>
+    <tr>
+      <td>Notifications</td>
+      <td>Future Work</td>
+      <td>Not found in current code</td>
+    </tr>
+  </table>
+
+  <h1>Technology Stack Table</h1>
+  <table border="1" cellspacing="0" cellpadding="6">
+    <tr>
+      <th>Component</th>
+      <th>Technology Used</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Mobile App</td>
+      <td>Android + Kotlin</td>
+      <td>Main app development</td>
+    </tr>
+    <tr>
+      <td>UI</td>
+      <td>Jetpack Compose</td>
+      <td>User interface</td>
+    </tr>
+    <tr>
+      <td>Authentication</td>
+      <td>Firebase Authentication</td>
+      <td>Login and register</td>
+    </tr>
+    <tr>
+      <td>Cloud Database</td>
+      <td>Firebase Firestore</td>
+      <td>User data sync</td>
+    </tr>
+    <tr>
+      <td>Local Database</td>
+      <td>Room</td>
+      <td>Library and progress storage</td>
+    </tr>
+    <tr>
+      <td>Local Preferences</td>
+      <td>DataStore</td>
+      <td>Settings and streak data</td>
+    </tr>
+    <tr>
+      <td>Network</td>
+      <td>OkHttp</td>
+      <td>API communication</td>
+    </tr>
+    <tr>
+      <td>Dependency Injection</td>
+      <td>Dagger Hilt</td>
+      <td>Manage dependencies</td>
+    </tr>
+  </table>
+</body>
+</html>
