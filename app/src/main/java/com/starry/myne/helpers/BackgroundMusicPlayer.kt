@@ -17,10 +17,7 @@ object BackgroundMusicPlayer {
 
     private fun play(context: Context) {
         val appContext = context.applicationContext
-        val player = mediaPlayer ?: MediaPlayer.create(appContext, R.raw.mu)?.apply {
-            isLooping = true
-            mediaPlayer = this
-        } ?: return
+        val player = mediaPlayer ?: return
 
         if (!player.isPlaying) {
             player.start()

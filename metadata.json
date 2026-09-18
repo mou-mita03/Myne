@@ -1,0 +1,6 @@
+{
+  "name": "Myne",
+  "description": "Read public-domain books and EPUB files in the browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

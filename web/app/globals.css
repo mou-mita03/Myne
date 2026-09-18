@@ -792,7 +792,7 @@ select:focus-visible { outline: 3px solid color-mix(in srgb, var(--teal) 68%, tr
 
 .reading-settings-note { display: inline-flex; margin-top: 16px; padding: 6px 9px; border-radius: 999px; background: var(--surface-high); color: var(--teal-deep); font-size: .68rem; font-weight: 700; }
 
-.profile-edit-row { display: flex; align-items: end; gap: 10px; margin: 18px 0; }
+.profile-edit-row { display: flex; align-items: flex-end; gap: 10px; margin: 18px 0; }
 .profile-edit-row label,
 .reading-preference-grid label { display: grid; flex: 1; gap: 6px; color: var(--muted); font-size: .72rem; font-weight: 700; }
 .profile-edit-row input,
